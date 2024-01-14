@@ -7,25 +7,14 @@ metadata:
     app.kubernetes.io/name: homepage
 data:
   bookmarks.yaml: |
-    - Communitcate:
-        - Discord:
-            - icon: discord.png
-              href: https://discord.com/app
     - Media:
         - YouTube:
             - icon: youtube.png
               href: https://youtube.com/feed/subscriptions
-    - Reading:
-        - Reddit:
-            - icon: reddit.png
-              href: https://reddit.com
     - Git:
         - kubesearch:
             - icon: kubernetes-dashboard.png
               href: https://kubesearch.dev
-        - flux-cluster-template:
-            - icon: github.png
-              href: https://github.com/onedr0p/flux-cluster-template
   docker.yaml: ""
   kubernetes.yaml: |
     mode: cluster
@@ -40,6 +29,14 @@ data:
               accountid: "{{HOMEPAGE_VAR_CLOUDFLARED_ACCOUNTID}}"
               tunnelid: "{{HOMEPAGE_VAR_CLOUDFLARED_TUNNELID}}"
               key: "{{HOMEPAGE_VAR_CLOUDFLARED_API_TOKEN}}"
+        - PiHole:
+            href: "{{HOMEPAGE_VAR_PIHOLE_URL}}/admin"
+            icon: pi-hole.png
+            description: Pi-Hole DNS and network Ad-Blocker
+            widget:
+              type: pihole
+              url: "{{HOMEPAGE_VAR_PIHOLE_URL}}"
+              key: "{{HOMEPAGE_VAR_PIHOLE_KEY}}"
   settings.yaml: |
     title: Dashboard
     theme: dark
