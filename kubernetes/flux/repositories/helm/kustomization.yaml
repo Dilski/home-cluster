@@ -9,6 +9,7 @@ resources:
   - ./coredns.yaml
   - ./csi-driver-nfs.yaml
   - ./descheduler.yaml
+  - ./emqx.yaml
   - ./external-dns.yaml
   - ./grafana.yaml
   - ./ingress-nginx.yaml
