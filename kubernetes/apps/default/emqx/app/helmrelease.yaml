@@ -1,0 +1,29 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta2
+kind: HelmRelease
+metadata:
+  name: emqx
+  namespace: default
+spec:
+  chart:
+    spec:
+      chart: emqx
+      reconcileStrategy: ChartVersion
+      sourceRef:
+        kind: HelmRepository
+        name: emqx
+        namespace: flux-system
+      version: 5.4.1
+  interval: 1h
+  values:
+    ingress:
+      dashboard:
+        enabled: true
+        className: internal
+        hosts:
+          - &host emqx.${SECRET_DOMAIN}
+        path: /
+        tls:
+          - hosts:
+              - *host
+    envFromSecret: emqx-secret
