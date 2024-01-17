@@ -26,4 +26,13 @@ spec:
         tls:
           - hosts:
               - *host
+      mqtt:
+        enabled: true
+        className: internal
+        hosts:
+          - &mqtthost mqtt.${SECRET_DOMAIN}
+        path: /
+        tls:
+          - hosts:
+              - *mqtthost
     envFromSecret: emqx-secret
