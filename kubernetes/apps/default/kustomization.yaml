@@ -6,3 +6,4 @@ resources:
   - ./home-assistant/ks.yaml
   - ./homepage/ks.yaml
   - ./mosquitto/ks.yaml
+  - ./zigbee2mqtt/ks.yaml
