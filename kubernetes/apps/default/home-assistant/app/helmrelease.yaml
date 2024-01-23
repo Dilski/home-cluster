@@ -90,7 +90,7 @@ spec:
             port: 8080
     ingress:
       main:
-        enabled: false
+        enabled: true
         className: external
         annotations:
           external-dns.alpha.kubernetes.io/target: "hass.${SECRET_DOMAIN}"
