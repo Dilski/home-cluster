@@ -93,7 +93,7 @@ spec:
         enabled: true
         className: external
         annotations:
-          external-dns.alpha.kubernetes.io/target: "hass.${SECRET_DOMAIN}"
+          external-dns.alpha.kubernetes.io/target: "external.${SECRET_DOMAIN}"
         hosts:
           - host: &host "hass.${SECRET_DOMAIN}"
             paths:
