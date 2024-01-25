@@ -39,6 +39,7 @@ spec:
               BASE_URL: https://mealie.${SECRET_DOMAIN}
               ALLOW_SIGNUP: false
               API_DOCS: false
+              TZ: ${TIMEZONE}
             resources:
               requests:
                 cpu: 100m
@@ -71,5 +72,3 @@ spec:
       data:
         enabled: true
         existingClaim: mealie-data
-        globalMounts:
-          - path: /app/data
