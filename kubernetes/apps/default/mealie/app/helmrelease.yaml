@@ -34,7 +34,7 @@ spec:
           main:
             image:
               repository: ghcr.io/mealie-recipes/mealie
-              tag: v1.0.0-RC1.1
+              tag: v1.0.0
             env:
               BASE_URL: https://mealie.${SECRET_DOMAIN}
               ALLOW_SIGNUP: true
