@@ -37,7 +37,7 @@ spec:
               tag: v1.0.0-RC1.1
             env:
               BASE_URL: https://mealie.${SECRET_DOMAIN}
-              ALLOW_SIGNUP: false
+              ALLOW_SIGNUP: true
               API_DOCS: false
               TZ: ${TIMEZONE}
             resources:
