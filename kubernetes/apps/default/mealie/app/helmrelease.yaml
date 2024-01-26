@@ -16,9 +16,11 @@ spec:
         namespace: flux-system
   maxHistory: 3
   install:
+    timeout: 25m
     remediation:
       retries: 3
   upgrade:
+    timeout: 25m
     cleanupOnFail: true
     remediation:
       retries: 3
@@ -39,6 +41,7 @@ spec:
               BASE_URL: https://mealie.${SECRET_DOMAIN}
               ALLOW_SIGNUP: true
               API_DOCS: false
+              DB_ENGINE: sqlite
               TZ: ${TIMEZONE}
             resources:
               requests:
