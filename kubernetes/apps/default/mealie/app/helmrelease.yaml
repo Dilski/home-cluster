@@ -75,3 +75,5 @@ spec:
       data:
         enabled: true
         existingClaim: mealie-data
+        globalMounts:
+          - path: /app/data
