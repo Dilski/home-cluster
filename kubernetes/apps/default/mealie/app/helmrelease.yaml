@@ -39,7 +39,7 @@ spec:
               tag: v1.1.0@sha256:17c9b77c4f3a61150d9bdfa19a244a22412e31d44d2d8b5cf9f60d462d0b6da4
             env:
               BASE_URL: https://mealie.${SECRET_DOMAIN}
-              ALLOW_SIGNUP: true
+              ALLOW_SIGNUP: false
               API_DOCS: false
               DB_ENGINE: sqlite
               TZ: ${TIMEZONE}
