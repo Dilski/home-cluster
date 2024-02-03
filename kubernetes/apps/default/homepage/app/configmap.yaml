@@ -29,14 +29,6 @@ data:
               accountid: "{{HOMEPAGE_VAR_CLOUDFLARED_ACCOUNTID}}"
               tunnelid: "{{HOMEPAGE_VAR_CLOUDFLARED_TUNNELID}}"
               key: "{{HOMEPAGE_VAR_CLOUDFLARED_API_TOKEN}}"
-        - PiHole:
-            href: "{{HOMEPAGE_VAR_PIHOLE_URL}}/admin"
-            icon: pi-hole.png
-            description: Pi-Hole DNS and network Ad-Blocker
-            widget:
-              type: pihole
-              url: "{{HOMEPAGE_VAR_PIHOLE_URL}}"
-              key: "{{HOMEPAGE_VAR_PIHOLE_KEY}}"
   settings.yaml: |
     title: Dashboard
     theme: dark
