@@ -26,6 +26,8 @@ spec:
   valuesFrom:
     - kind: Secret
       name: longhorn-config-secret
+      valuesKey: BACKUP_TARGET
+      targetPath: defaultSettings.backupTarget
   values:
     ingress:
       enabled: true
@@ -34,4 +36,3 @@ spec:
       tls: true
     defaultSettings:
       backupTargetCredentialSecret: longhorn-backup-secret
-      backupTarget: "${BACKUP_TARGET}"
