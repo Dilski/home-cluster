@@ -23,6 +23,9 @@ spec:
       retries: 3
   uninstall:
     keepHistory: false
+  valuesFrom:
+    - kind: Secret
+      name: longhorn-config-secret
   values:
     ingress:
       enabled: true
@@ -31,8 +34,4 @@ spec:
       tls: true
     defaultSettings:
       backupTargetCredentialSecret: longhorn-backup-secret
-      backupTarget:
-        valueFrom:
-          secretKeyRef:
-            name: longhorn-config-secret
-            key: BACKUP_TARGET
+      backupTarget: "${BACKUP_TARGET}"
