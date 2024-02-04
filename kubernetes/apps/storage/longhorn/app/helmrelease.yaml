@@ -31,8 +31,8 @@ spec:
       tls: true
     defaultSettings:
       backupTargetCredentialSecret: longhorn-backup-secret
-      backupTarget: 
+      backupTarget:
         valueFrom:
           secretKeyRef:
-            name: longhorn-backup-secret
+            name: longhorn-config-secret
             key: BACKUP_TARGET
