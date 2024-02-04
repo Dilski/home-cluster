@@ -29,3 +29,10 @@ spec:
       className: internal
       host: longhorn.${SECRET_DOMAIN}
       tls: true
+    defaultSettings:
+      backupTargetCredentialSecret: longhorn-backup-secret
+      backupTarget: 
+        valueFrom:
+          secretKeyRef:
+            name: longhorn-backup-secret
+            key: BACKUP_TARGET
