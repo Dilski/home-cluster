@@ -94,6 +94,7 @@ data:
           gethomepage.dev/name: Prometheus
           gethomepage.dev/group: Observability
           gethomepage.dev/widget.type: prometheus
+          gethomepage.dev/pod-selector: "prometheus-kube-prometheus-stack-0"
         pathType: Prefix
         hosts:
           - "prometheus.${SECRET_DOMAIN}"
