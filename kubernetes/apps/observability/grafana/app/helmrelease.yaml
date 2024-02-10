@@ -111,6 +111,11 @@ spec:
           gnetId: 1860 # https://grafana.com/grafana/dashboards/1860?tab=revisions
           revision: 31
           datasource: Prometheus
+        longhorn:
+          gnetId: 17626 # https://grafana.com/grafana/dashboards/17626?tab=revisions
+          revision: 1
+          datasource:
+            - { name: DS_PROMETHEUS-LONGHORN, value: Prometheus }
       flux:
         flux-cluster:
           url: https://raw.githubusercontent.com/fluxcd/flux2-monitoring-example/main/monitoring/configs/dashboards/cluster.json
