@@ -36,3 +36,7 @@ spec:
       tls: true
     defaultSettings:
       backupTargetCredentialSecret: longhorn-backup-secret
+    metrics:
+      serviceMonitor:
+        enabled: true
+
