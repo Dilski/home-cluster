@@ -7,4 +7,5 @@ resources:
   - ./homepage/ks.yaml
   - ./mealie/ks.yaml
   - ./mosquitto/ks.yaml
+  - ./paperless/ks.yaml
   - ./zigbee2mqtt/ks.yaml
