@@ -6,8 +6,8 @@ metadata:
   namespace: databases
   labels:
     cnpg.io/cluster: postgres16
-  # annotations:
-  #   io.cilium/lb-ipam-ips: ${LB_POSTGRES}
+  annotations:
+    io.cilium/lb-ipam-ips: ${SVC_PG16_ADDR}
 spec:
   ports:
     - protocol: TCP
