@@ -10,5 +10,5 @@ resources:
   - ./mosquitto/ks.yaml
   - ./paperless/ks.yaml
   - ./piper/ks.yaml
-  - ./whisper/ks.yaml
+  # - ./whisper/ks.yaml
   - ./zigbee2mqtt/ks.yaml
