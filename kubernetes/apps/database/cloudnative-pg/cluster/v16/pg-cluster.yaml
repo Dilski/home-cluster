@@ -15,3 +15,12 @@ spec:
     name: postgres16-superuser
   monitoring:
     enablePodMonitor: true
+  managed:
+    roles:
+    - name: paperless
+      ensure: present
+      createdb: true
+      login: true
+      superuser: false
+      passwordSecret:
+        name: postgres16-paperless-appuser
