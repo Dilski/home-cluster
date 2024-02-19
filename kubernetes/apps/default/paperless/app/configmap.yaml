@@ -21,6 +21,11 @@ data:
   PAPERLESS_OCR_SKIP_ARCHIVE_FILE: with_text
   PAPERLESS_OCR_DESKEW: 'false'
 
+  # Consumer settings
+  PAPERLESS_CONSUMER_ENABLE_BARCODES: true # enable search for barcodes
+  PAPERLESS_CONSUMER_ENABLE_ASN_BARCODE: true # enable setting ASN by ASN barcodes
+  PAPERLESS_CONSUMER_BARCODE_SCANNER: ZXING # switch from pyzbar to zxing for better recognition
+
   # Software tweaks
   PAPERLESS_TIME_ZONE: "${TIMEZONE}"
   PAPERLESS_TASK_WORKERS: '2'
