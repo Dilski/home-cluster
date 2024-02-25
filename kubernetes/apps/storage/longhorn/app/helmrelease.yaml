@@ -39,3 +39,6 @@ spec:
     monitoring:
       enabled: true
       createPrometheusRules: true
+    metrics:
+      serviceMonitor:
+        enabled: true
