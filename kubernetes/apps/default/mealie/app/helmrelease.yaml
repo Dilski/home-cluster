@@ -20,10 +20,10 @@ spec:
     remediation:
       retries: 3
   upgrade:
-    timeout: 25m
+    timeout: 30m
     cleanupOnFail: true
     remediation:
-      retries: 3
+      retries: 4
   uninstall:
     keepHistory: false
   dependsOn:
