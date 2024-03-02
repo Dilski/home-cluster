@@ -45,11 +45,11 @@ spec:
               TZ: ${TIMEZONE}
             resources:
               requests:
-                cpu: 100m
-                memory: 500Mi
+                cpu: 15m
+                memory: 249M
               limits:
-                cpu: 200m
-                memory: 800Mi
+                cpu: 15m
+                memory: 249M
     service:
       main:
         ports:
