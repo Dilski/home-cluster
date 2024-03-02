@@ -45,20 +45,11 @@ spec:
               TZ: ${TIMEZONE}
             resources:
               requests:
-                cpu: 15m
-                memory: 249M
+                cpu: 100m
+                memory: 500Mi
               limits:
-                cpu: 15m
-                memory: 249M
-            probes:
-              startup:
-                enabled: true
-                custom: true
-                spec:
-                  initialDelaySeconds: 0
-                  timeoutSeconds: 1
-                  periodSeconds: 5
-                  failureThreshold: 120
+                cpu: 200m
+                memory: 800Mi
     service:
       main:
         ports:
