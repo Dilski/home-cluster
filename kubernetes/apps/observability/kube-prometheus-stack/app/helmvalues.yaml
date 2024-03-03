@@ -117,6 +117,12 @@ data:
               resources:
                 requests:
                   storage: 10Gi
+        additionalScrapeConfigs:
+        - job_name: 'water-bowl'
+          metrics_path: '/metrics'
+          static_configs:
+          - targets:
+            - 192.168.1.118:9290
     grafana:
       enabled: false
       forceDeployDashboards: true
