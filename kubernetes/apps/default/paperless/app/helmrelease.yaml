@@ -57,11 +57,11 @@ spec:
                   periodSeconds: 15
             resources:
               requests:
-                cpu: 50m
-                memory: 400Mi
+                cpu: 15m
+                memory: 1102M
               limits:
                 cpu: 800m
-                memory: 1200Mi
+                memory: 1764M
 
     service:
       main:
