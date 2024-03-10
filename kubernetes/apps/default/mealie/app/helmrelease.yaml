@@ -36,7 +36,7 @@ spec:
           main:
             image:
               repository: ghcr.io/mealie-recipes/mealie
-              tag: v1.1.0@sha256:17c9b77c4f3a61150d9bdfa19a244a22412e31d44d2d8b5cf9f60d462d0b6da4
+              tag: v1.3.2@sha256:c62937311d49dfa48b34eff9e1d93c77fb712b16b718ffd4f2a9e068bc70d26a
             env:
               BASE_URL: https://mealie.${SECRET_DOMAIN}
               ALLOW_SIGNUP: false
