@@ -48,6 +48,12 @@ spec:
               startup:
                 spec:
                   failureThreshold: 90
+            resources:
+              requests:
+                cpu: 500m
+                memory: 250Mi
+              limits:
+                memory: 2500Mi
     service:
       main:
         ports:
