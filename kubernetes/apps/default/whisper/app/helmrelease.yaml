@@ -58,9 +58,19 @@ spec:
       main:
         ports:
           http:
+            enabled: false
+            primary: false
+          whisper:
+            enabled: true
+            primary: true
             port: 10300
+            protocol: TCP
     persistence:
       config:
-        type: emptyDir
-        globalMounts:
-          - path: /data
+        enabled: false
+      data:
+        enabled: true
+        storageClass: longhorn
+        type: persistentVolumeClaim
+        accessMode: ReadWriteOnce
+        size: 8Gi
