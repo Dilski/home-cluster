@@ -35,7 +35,7 @@ spec:
           init-config:
             image:
               repository: docker.io/arm64v8/eclipse-mosquitto
-              tag: 2.0.18@sha256:ad3cc53c2192ea6cf4a11f459cb7edeb68cb2550ffe5e81ce4fca6170144a853
+              tag: 2.0.18@sha256:da56f28cef444b6c0dd9be915026ed01d52c2f71d454064c40755cb59849e6e5
               pullPolicy: IfNotPresent
             command: ["/bin/sh", "-c"]
             args: ["cp /tmp/secret/* /mosquitto/external_config/ && mosquitto_passwd -U /mosquitto/external_config/mosquitto_pwd"]
@@ -43,7 +43,7 @@ spec:
           main:
             image:
               repository: docker.io/arm64v8/eclipse-mosquitto
-              tag: 2.0.18@sha256:ad3cc53c2192ea6cf4a11f459cb7edeb68cb2550ffe5e81ce4fca6170144a853
+              tag: 2.0.18@sha256:da56f28cef444b6c0dd9be915026ed01d52c2f71d454064c40755cb59849e6e5
             resources:
               requests:
                 cpu: 10m
