@@ -9,6 +9,4 @@ resources:
   - ./mealie/ks.yaml
   - ./mosquitto/ks.yaml
   - ./paperless/ks.yaml
-  - ./piper/ks.yaml
-  - ./whisper/ks.yaml
   - ./zigbee2mqtt/ks.yaml
